@@ -1,0 +1,27 @@
+<!-- Docs master nav -->
+<header class="navbar navbar-default navbar-static-top navbar-branded" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Bootstrap SF1", root_path, { :class => 'navbar-brand navbar-foundation-logo' } %>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <%= link_to "Theme", theme_path %>
+        </li>
+        <li>
+          <%= link_to "New Icons", icons_path %>
+        </li>
+        <li>
+          <%= link_to "New Components", new_path %>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
