@@ -1,0 +1,200 @@
+<h2 class="section-head">Cards</h2>
+<p>From the SFDC styleguide:</p>
+<blockquote>The card component is a generic container for a piece of content that needs to be separated from other pieces of content on the same page. It may include a header with a title, and can contain a list.</blockquote>
+<div class="fn-example">
+  <div class="card">
+    <div class="card-heading">
+      ACME Publishing
+    </div>
+    <div class="card-detail">
+      Details about this card can be placed in the card body.
+    </div>
+  </div>
+</div>
+<pre>
+  <code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-heading&quot;&gt;
+    ACME Publishing
+  &lt;/div&gt;
+  &lt;div class=&quot;card-detail&quot;&gt;
+    Details about this card can be placed in the card body.
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+<h3 id="cards-sizing">Sizing</h3>
+<p>The width of the card will be the full width of its parent element. For example you can wrap a card in a container with a column class.</p>
+<div class="fn-example">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-heading">
+        ACME Publishing
+      </div>
+      <div class="card-detail">
+        Details about this card can be placed in the card body.
+      </div>
+    </div>
+  </div>
+</div>
+<pre>
+  <code class="language-html">
+&lt;div class=&quot;col-md-4&quot;&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-heading&quot;&gt;
+      ACME Publishing
+    &lt;/div&gt;
+    &lt;div class=&quot;card-detail&quot;&gt;
+      Details about this card can be placed in the card body.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+<h3 id="cards-details">Details</h3>
+<p>In general cards will be used to display line by line details about a particular object. Replace the div.card-detail element with an ul.card-detail.</p>
+<div class="fn-example">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-heading">
+        ACME Publishing
+      </div>
+      <ul class="card-detail">
+        <li>Nonprofit Organization</li>
+        <li>Santa Barbara, CA</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<pre>
+  <code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-heading&quot;&gt;
+    ACME Publishing
+  &lt;/div&gt;
+  &lt;ul class=&quot;card-detail&quot;&gt;
+    &lt;li&gt;Nonprofit Organization&lt;/li&gt;
+    &lt;li&gt;Santa Barbara, CA&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+<h3 id="cards-labels">Label and value detail pairs</h3>
+<p>Sometimes you will need to provide labels for your data. This is only appropriate to use with brief bits of data and labels to display.</p>
+<div class="fn-example">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-heading">
+        ACME Publishing
+      </div>
+      <ul class="card-detail card-detail-labels">
+        <li>
+          <label class="card-detail-label">Founded</label>
+          <span class="card-detail-value">1956</span>
+        </li>
+        <li>
+          <label class="card-detail-label">Budget</label>
+          <span class="card-detail-value">$10,000,000</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<pre>
+  <code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-heading&quot;&gt;
+    ACME Publishing
+  &lt;/div&gt;
+  &lt;ul class=&quot;card-detail card-detail-labels&quot;&gt;
+    &lt;li&gt;
+      &lt;label class=&quot;card-detail-label&quot;&gt;Founded&lt;/label&gt;
+      &lt;span class=&quot;card-detail-value&quot;&gt;1956&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;label class=&quot;card-detail-label&quot;&gt;Budget&lt;/label&gt;
+      &lt;span class=&quot;card-detail-value&quot;&gt;$10,000,000&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+  </code>
+</pre>
+<h3 id="cards-contexts">Contextual Cards</h3>
+<p>In many cases you will want to display icons on cards or card lists to indicate which object or context they relate to in the app.</p>
+<div class="fn-example">
+  <!-- Card for an Account -->
+  <div class="col-md-4">
+    <div class="card context-account">
+      <div class="card-heading">
+        ACME Publishing
+      </div>
+      <ul class="card-detail ">
+        <li>Nonprofit Organization</li>
+        <li>Santa Barbara, CA</li>
+      </ul>
+    </div> <!-- end card -->
+  </div>
+
+  <!-- Card for Contact -->
+  <div class="col-md-4">
+    <div class="card context-contact">
+      <div class="card-heading">
+        Jeffery Fisher
+      </div>
+      <ul class="card-detail ">
+        <li>Executive</li>
+        <li>Santa Barbara, CA</li>
+      </ul>
+    </div> <!-- end card -->
+  </div>
+
+  <!-- Custom context -->
+  <div class="col-md-4">
+    <div class="card context-c-sailboat">
+      <div class="card-heading">
+        Timothy Lake
+      </div>
+      <ul class="card-detail ">
+        <li>Sailing Buddy</li>
+        <li>San Francisco, CA</li>
+      </ul>
+    </div> <!-- end card -->
+  </div>
+</div>
+
+<pre>
+  <code class="language-html">
+&lt;!-- Card for an Account --&gt;
+&lt;div class=&quot;card context-account&quot;&gt;
+  &lt;div class=&quot;card-heading&quot;&gt;
+    ACME Publishing
+  &lt;/div&gt;
+  &lt;ul class=&quot;card-detail &quot;&gt;
+    &lt;li&gt;Nonprofit Organization&lt;/li&gt;
+    &lt;li&gt;Santa Barbara, CA&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- Card for Contact --&gt;
+&lt;div class=&quot;card context-contact&quot;&gt;
+  &lt;div class=&quot;card-heading&quot;&gt;
+    Jeffery Fisher
+  &lt;/div&gt;
+  &lt;ul class=&quot;card-detail &quot;&gt;
+    &lt;li&gt;Executive&lt;/li&gt;
+    &lt;li&gt;Santa Barbara, CA&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- Custom context --&gt;
+&lt;div class=&quot;card context-c-sailboat&quot;&gt;
+  &lt;div class=&quot;card-heading&quot;&gt;
+    Timothy Lake
+  &lt;/div&gt;
+  &lt;ul class=&quot;card-detail &quot;&gt;
+    &lt;li&gt;Sailing Buddy&lt;/li&gt;
+    &lt;li&gt;San Francisco, CA&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+  </code>
+</pre>
