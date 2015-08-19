@@ -1,5 +1,5 @@
 ## Rails & Bootstrap SF1 Sample
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/tyoshikawa1106/rails-bootstrap-sf1
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/tyoshikawa1106/rails-bootstrap-sf1)
 
 <a href="https://www.youtube.com/watch?v=sYT1zGBIl3s" target="_blank">>> Demo Video</a>  
 
