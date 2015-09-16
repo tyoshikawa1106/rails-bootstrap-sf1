@@ -1,4 +1,4 @@
-## Rails & Bootstrap SF1
+# Rails & Bootstrap SF1
 [![Build Status](https://travis-ci.org/tyoshikawa1106/rails-bootstrap-sf1.svg?branch=master)](https://travis-ci.org/tyoshikawa1106/rails-bootstrap-sf1)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/tyoshikawa1106/rails-bootstrap-sf1)
