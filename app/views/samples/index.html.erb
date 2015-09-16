@@ -1,1 +1,23 @@
-<%= render 'index_container' %>
+<div class="jumbotron jumbotron-inverse jumbotron-center" id="content">
+  <div class="container">
+    <!-- download -->
+    <%= render 'samples/index/download' %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <!-- Introduction -->
+      <%= render 'samples/index/introduction' %>
+      <!-- Getting Started -->
+      <%= render 'samples/index/getting_started.html' %>
+      <!-- Development -->
+      <%= render 'samples/index/development' %>
+    </div>
+    <div class="col-md-3">
+      <!-- nav -->
+      <%= render 'samples/index/nav' %>
+    </div>
+  </div>
+</div>
