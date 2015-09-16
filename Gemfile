@@ -1,27 +1,41 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
-#ruby-gemset=railstutorial_rails_4_0
+ruby '2.2.3'
 
-gem 'rails', '4.0.5'
+gem 'rails', '4.2.4'
 gem 'bootstrap-sass', '~> 3.3.5'
-gem 'sprockets', '~> 2.12.4'
+gem 'sprockets', '~> 3.3.3'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
+  gem 'sqlite3', '1.3.10'
+  gem 'rspec-rails', '~> 3.1.0'
+  gem 'rspec-its', '~> 1.2.0'
 end
 
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '~> 2.4.3'
+  gem 'selenium-webdriver', '~> 2.43.0'
+  gem 'factory_girl_rails', '~> 4.5.0'
 end
 
-gem 'sass-rails', '4.0.5'
-gem 'uglifier', '2.1.1'
-gem 'coffee-rails', '4.0.1'
-gem 'jquery-rails', '3.0.4'
-gem 'turbolinks', '1.1.1'
-gem 'jbuilder', '1.0.2'
+gem 'sass-rails', '5.0.3'
+gem 'uglifier', '2.7.2'
+gem 'coffee-rails', '4.1.0'
+gem 'jquery-rails', '4.0.4'
+gem 'turbolinks', '2.5.3'
+gem 'jbuilder', '2.3.1'
+
+# Railsコンソールを見やすく
+gem 'hirb', group: [:development, :test]
+gem 'hirb-unicode', group: [:development, :test]
+# エラーページを見やすく
+gem 'better_errors', group: [:development, :test]
+gem 'binding_of_caller', group: [:development, :test]
+# テストカバレッジ確認
+gem 'simplecov', :require => false, :group => :test
+# テストデータ作成
+gem 'faker', '~> 1.5.0'
+# GitHub&テストカバレッジ
+gem 'coveralls', require: false
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
