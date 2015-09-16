@@ -10,6 +10,4 @@
  *
  *= require_self
  *= require_tree .
- *= require bootstrap-sf1/dist/css/bootstrap.min.css
- *= require bootstrap-sf1/dist/css/docs.min.css
  */
