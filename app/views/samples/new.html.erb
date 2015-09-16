@@ -1,1 +1,29 @@
-<%= render 'new_container' %>
+<div class="page-header page-header-showcase" id="content">
+  <div class="container">
+    <!-- Page Header -->
+    <%= render 'samples/partial_new/page_header' %>
+  </div>
+</div>
+
+<div class="container bs-docs-container">
+  <div class="row">
+    <div class="col-md-9">
+      <section class="section" id="cards">
+        <!-- Cards -->
+        <%= render 'samples/partial_new/cards' %>
+      </section>
+      <section class="section" id="card-list">
+        <!-- Card list -->
+        <%= render 'samples/partial_new/card_list' %>
+      </section>
+      <section class="section" id="page-headers">
+        <!-- Page Headers (anchors) -->
+        <%= render 'samples/partial_new/page_headers_anchors' %>
+      </section>
+    </div>
+    <div class="col-md-3">
+      <!-- Nav -->
+      <%= render 'samples/partial_new/nav' %>
+    </div>
+  </div>
+</div>
