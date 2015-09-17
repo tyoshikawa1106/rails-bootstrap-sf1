@@ -3,4 +3,14 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/tyoshikawa1106/rails-bootstrap-sf1)
 
-<img src="http://cdn-ak.f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150817/20150817225055.png" />
+### Top
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150917/20150917181044.png" />
+
+### Theme
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150917/20150917181045.png" />
+
+### New Icons
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150917/20150917181046.png" />
+
+### New Components
+<img src="http://f.st-hatena.com/images/fotolife/t/tyoshikawa1106/20150917/20150917181047.png" />
