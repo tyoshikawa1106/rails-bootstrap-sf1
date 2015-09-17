@@ -36,4 +36,24 @@ describe "Static pages" do
     let(:page_title)    { 'New Components' }
     it_should_behave_like "all static pages"
   end
+
+  describe "リンクのテスト" do
+    it "ヘッダーのリンク" do
+      visit root_path
+      click_link "Bootstrap SF1"
+      expect(page).to have_title('Bootstrap SF1')
+      click_link "Theme"
+      expect(page).to have_title('Theme')
+      click_link "New Icons"
+      expect(page).to have_title('New Icons')
+      click_link "New Components"
+      expect(page).to have_title('New Components')
+    end
+
+    it "フッターのリンク" do
+      visit root_path
+      click_link "Bootstrap"
+      expect(page).to have_title('Bootstrap')
+    end
+  end
 end
